@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado tabla de multiplicar</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Tabla de multiplicar del número {{num}}</h1>   
+    <table>
+    {% for i in range(0,11) %}
+      <tr><td>{{num}} <td>* </td><td>{{i}}</td><td>=</td><td> {{num*i}}</td></tr>
+    {% endfor %}
+    </table>
+    <a href="/">Volver</a>
+</body>
+</html>
